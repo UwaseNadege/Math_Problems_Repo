@@ -17,9 +17,9 @@
 
    * **Series Connection**: Current flows if **all elements** are functional.
    
-   $$
-   A_\text{series} = A_1 \cap A_2 \cap \dots \cap A_n
-   $$
+$$
+A_\text{series} = A_1 \cap A_2 \cap \dots \cap A_n
+$$
    
    * **Parallel Connection**: Current flows if **at least one element** is functional.
      $$ A_\text{parallel} = A_1 \cup A_2 \cup \dots \cup A_n $$
