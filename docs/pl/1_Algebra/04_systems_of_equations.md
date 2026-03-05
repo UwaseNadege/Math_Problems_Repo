@@ -5,7 +5,10 @@
 Rozwiąż układ równań:
 
 $$
-\begin{aligned} 2x+3y&=5,\\ x-4y&=-2. \end{aligned}
+\begin{aligned}
+2x+3y&=5,\\
+x-4y&=-2.
+\end{aligned}
 $$
 
 używając metod: Cramera, eliminacji Gaussa i macierzy odwrotnej.
@@ -15,7 +18,11 @@ używając metod: Cramera, eliminacji Gaussa i macierzy odwrotnej.
 Rozwiąż układ trzech równań z trzema niewiadomymi:
 
 $$
-\begin{aligned} x+y+z&=6,\\ 2x-y+3z&=14,\\ -x+2y-z&=-2. \end{aligned}
+\begin{aligned}
+x+y+z&=6,\\
+2x-y+3z&=14,\\
+-x+2y-z&=-2.
+\end{aligned}
 $$
 
 używając metod: Cramera, eliminacji Gaussa i macierzy odwrotnej.
@@ -25,7 +32,10 @@ używając metod: Cramera, eliminacji Gaussa i macierzy odwrotnej.
 $\star$ Rozważ układ parametryczny zależny od $\lambda$:
 
 $$
-\begin{aligned} x+\lambda y&=1,\\ 2x+(1+\lambda)y&=3. \end{aligned}
+\begin{aligned}
+x+\lambda y&=1,\\
+2x+(1+\lambda)y&=3.
+\end{aligned}
 $$
 
 Określ wartości $\lambda$, dla których układ ma jedno rozwiązanie, nieskończenie wiele rozwiązań lub brak rozwiązań.

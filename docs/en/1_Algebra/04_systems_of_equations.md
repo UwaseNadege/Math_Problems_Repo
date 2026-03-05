@@ -5,7 +5,10 @@
 Solve the system of equations:
 
 $$
-\begin{aligned} 2x+3y&=5,\\ x-4y&=-2. \end{aligned}
+\begin{aligned}
+2x+3y&=5,\\
+x-4y&=-2.
+\end{aligned}
 $$
 
 using the methods: Cramer's rule, Gaussian elimination, and inverse matrix.
@@ -15,7 +18,11 @@ using the methods: Cramer's rule, Gaussian elimination, and inverse matrix.
 Solve the system of three equations with three unknowns:
 
 $$
-\begin{aligned} x+y+z&=6,\\ 2x-y+3z&=14,\\ -x+2y-z&=-2. \end{aligned}
+\begin{aligned}
+x+y+z&=6,\\
+2x-y+3z&=14,\\
+-x+2y-z&=-2.
+\end{aligned}
 $$
 
 using the methods: Cramer's rule, Gaussian elimination, and inverse matrix.
@@ -25,7 +32,10 @@ using the methods: Cramer's rule, Gaussian elimination, and inverse matrix.
 $\star$ Consider the parametric system dependent on $\lambda$:
 
 $$
-\begin{aligned} x+\lambda y&=1,\\ 2x+(1+\lambda)y&=3. \end{aligned}
+\begin{aligned}
+x+\lambda y&=1,\\
+2x+(1+\lambda)y&=3.
+\end{aligned}
 $$
 
 Determine the values of $\lambda$ for which the system has one solution, infinitely many solutions, or no solution.

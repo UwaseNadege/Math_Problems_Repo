@@ -1,61 +1,97 @@
+# Task 1 – Random Events and Probability
 
-# **Task 1 – Random Events and Probability**
+## Theory (Simple Version)
+- **Sample Space** ($\Omega$) is all possible outcomes.  
+  Example:  
 
-### **Theory in Simple Words**
+  $$
+  \Omega = \{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}
+  $$
 
-* A **sample space** is all possible outcomes of an experiment. Here,
-  (\Omega = {\omega_1, \omega_2, \omega_3, \omega_4, \omega_5})
-  means there are 5 possible outcomes.
+- **Event** is a subset of outcomes.  
+  Example:  
 
-* An **event** is just a group of outcomes. For example:
-  (A = {\omega_1, \omega_3, \omega_5}), (B = {\omega_2, \omega_3, \omega_4})
+  $$
+  A = \{\omega_1, \omega_3, \omega_5\}, \quad B = \{\omega_2, \omega_3, \omega_4\}
+  $$
 
-* **Union (A ∪ B)**: everything in A or B or both.
-
-* **Intersection (A ∩ B)**: only what’s in **both** A and B.
-
-* **Difference (A \ B)**: what’s in A **but not** in B.
-
-* **Difference (B \ A)**: what’s in B **but not** in A.
-
----
-
-### **Problem**
-
-Find:
-
-1. (A \cup B)
-2. (A \cap B)
-3. (B \backslash A)
-4. (A \backslash B)
+- **Union ($A \cup B$)**: all outcomes in A or B or both.  
+- **Intersection ($A \cap B$)**: only outcomes in both A and B.  
+- **Difference ($A \backslash B$)**: outcomes in A but not in B.  
+- **Difference ($B \backslash A$)**: outcomes in B but not in A.  
 
 ---
 
-### **Solution (Explained Simply)**
+## Problem
+Find:  
 
-1. **Union** (A \cup B)
+1. 
 
-* Take everything from A: (\omega_1, \omega_3, \omega_5)
-* Take everything from B: (\omega_2, \omega_3, \omega_4)
-* Don’t repeat: (\omega_1, \omega_2, \omega_3, \omega_4, \omega_5)
-  **So, (A \cup B = {\omega_1, \omega_2, \omega_3, \omega_4, \omega_5})**
+$$
+A \cup B
+$$
 
-2. **Intersection** (A \cap B)
+2. $$
+A \cap B
+$$
 
-* Only the outcomes that are in both A and B: (\omega_3)
-  **So, (A \cap B = {\omega_3})**
+3. $$
+B \backslash A
+$$
 
-3. **Difference** (B \backslash A)
-
-* Take B: (\omega_2, \omega_3, \omega_4)
-* Remove anything that is also in A: remove (\omega_3)
-  **So, (B \backslash A = {\omega_2, \omega_4})**
-
-4. **Difference** (A \backslash B)
-
-* Take A: (\omega_1, \omega_3, \omega_5)
-* Remove anything that is also in B: remove (\omega_3)
-  **So, (A \backslash B = {\omega_1, \omega_5})**
+4. $$
+A \backslash B
+$$
 
 ---
 
+## Solution (Step by Step)
+
+1. **Union ($A \cup B$)**  
+
+- Take all from A: $\omega_1, \omega_3, \omega_5$  
+- Take all from B: $\omega_2, \omega_3, \omega_4$  
+- Remove duplicates  
+
+  $$
+  A \cup B = \{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}
+  $$
+
+---
+
+2. **Intersection ($A \cap B$)**  
+
+- Only outcomes in **both** A and B  
+
+  $$
+  A \cap B = \{\omega_3\}
+  $$
+
+---
+
+3. **Difference ($B \backslash A$)**  
+
+- Take B: $\omega_2, \omega_3, \omega_4$  
+- Remove outcomes also in A ($\omega_3$)  
+
+  $$
+  B \backslash A = \{\omega_2, \omega_4\}
+  $$
+
+---
+
+4. **Difference ($A \backslash B$)**  
+
+- Take A: $\omega_1, \omega_3, \omega_5$  
+- Remove outcomes also in B ($\omega_3$)  
+
+  $$
+  A \backslash B = \{\omega_1, \omega_5\}
+  $$
+
+---
+
+## Quick Reminder
+- **Union** = everything together  
+- **Intersection** = only what is common  
+- **Difference** = take one set, remove what’s shared
