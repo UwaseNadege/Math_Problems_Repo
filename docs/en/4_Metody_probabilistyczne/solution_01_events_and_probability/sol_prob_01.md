@@ -1,31 +1,61 @@
-Solution  
-Task 1 
 
-Union A∪BA \cup BA∪B 
+# **Task 1 – Random Events and Probability**
 
-Take everything from A: ω1,ω3,ω5\omega_1, \omega_3, \omega_5ω1 ,ω3 ,ω5  
+### **Theory in Simple Words**
 
-Take everything from B: ω2,ω3,ω4\omega_2, \omega_3, \omega_4ω2 ,ω3 ,ω4  
+* A **sample space** is all possible outcomes of an experiment. Here,
+  (\Omega = {\omega_1, \omega_2, \omega_3, \omega_4, \omega_5})
+  means there are 5 possible outcomes.
 
-Don’t repeat: ω1,ω2,ω3,ω4,ω5\omega_1, \omega_2, \omega_3, \omega_4, \omega_5ω1 ,ω2 ,ω3 ,ω4 ,ω5  
-So, A∪B={ω1,ω2,ω3,ω4,ω5}A \cup B = \{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}A∪B={ω1 ,ω2 ,ω3 ,ω4 ,ω5 } 
+* An **event** is just a group of outcomes. For example:
+  (A = {\omega_1, \omega_3, \omega_5}), (B = {\omega_2, \omega_3, \omega_4})
 
-Intersection A∩BA \cap BA∩B 
+* **Union (A ∪ B)**: everything in A or B or both.
 
-Only the outcomes that are in both A and B: ω3\omega_3ω3  
-So, A∩B={ω3}A \cap B = \{\omega_3\}A∩B={ω3 } 
+* **Intersection (A ∩ B)**: only what’s in **both** A and B.
 
-Difference B\AB \backslash AB\A 
+* **Difference (A \ B)**: what’s in A **but not** in B.
 
-Take B: ω2,ω3,ω4\omega_2, \omega_3, \omega_4ω2 ,ω3 ,ω4  
+* **Difference (B \ A)**: what’s in B **but not** in A.
 
-Remove anything that is also in A: remove ω3\omega_3ω3  
-So, B\A={ω2,ω4}B \backslash A = \{\omega_2, \omega_4\}B\A={ω2 ,ω4 } 
+---
 
-Difference A\BA \backslash BA\B 
+### **Problem**
 
-Take A: ω1,ω3,ω5\omega_1, \omega_3, \omega_5ω1 ,ω3 ,ω5  
+Find:
 
-Remove anything that is also in B: remove ω3\omega_3ω3  
-So, A\B={ω1,ω5}A \backslash B = \{\omega_1, \omega_5\}A\B={ω1 ,ω5 }
+1. (A \cup B)
+2. (A \cap B)
+3. (B \backslash A)
+4. (A \backslash B)
+
+---
+
+### **Solution (Explained Simply)**
+
+1. **Union** (A \cup B)
+
+* Take everything from A: (\omega_1, \omega_3, \omega_5)
+* Take everything from B: (\omega_2, \omega_3, \omega_4)
+* Don’t repeat: (\omega_1, \omega_2, \omega_3, \omega_4, \omega_5)
+  **So, (A \cup B = {\omega_1, \omega_2, \omega_3, \omega_4, \omega_5})**
+
+2. **Intersection** (A \cap B)
+
+* Only the outcomes that are in both A and B: (\omega_3)
+  **So, (A \cap B = {\omega_3})**
+
+3. **Difference** (B \backslash A)
+
+* Take B: (\omega_2, \omega_3, \omega_4)
+* Remove anything that is also in A: remove (\omega_3)
+  **So, (B \backslash A = {\omega_2, \omega_4})**
+
+4. **Difference** (A \backslash B)
+
+* Take A: (\omega_1, \omega_3, \omega_5)
+* Remove anything that is also in B: remove (\omega_3)
+  **So, (A \backslash B = {\omega_1, \omega_5})**
+
+---
 
