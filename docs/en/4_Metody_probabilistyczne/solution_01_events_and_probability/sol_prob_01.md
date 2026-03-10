@@ -1,97 +1,187 @@
-# Task 1 – Random Events and Probability
+# Task 1 — Coin Tossing
 
-## Theory (Simple Version)
-- **Sample Space** ($\Omega$) is all possible outcomes.  
-  Example:  
+We analyze an experiment consisting of tossing a **fair coin**.
+A fair coin has two possible outcomes:
 
-  $$
-  \Omega = \{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}
-  $$
+* **Heads** (denoted (H))
+* **Tails** (denoted (T))
 
-- **Event** is a subset of outcomes.  
-  Example:  
-
-  $$
-  A = \{\omega_1, \omega_3, \omega_5\}, \quad B = \{\omega_2, \omega_3, \omega_4\}
-  $$
-
-- **Union ($A \cup B$)**: all outcomes in A or B or both.  
-- **Intersection ($A \cap B$)**: only outcomes in both A and B.  
-- **Difference ($A \backslash B$)**: outcomes in A but not in B.  
-- **Difference ($B \backslash A$)**: outcomes in B but not in A.  
+Because the **order of outcomes matters**, the result of multiple tosses must record the **exact sequence** of outcomes.
 
 ---
 
-## Problem
-Find:  
+# 1. Sample Space for One Coin Toss
 
-1. 
+The **sample space** of an experiment is the set of **all possible elementary outcomes**.
+
+For a **single coin toss**, there are only two possible results:
+
+* Heads
+* Tails
+
+Therefore the sample space is
 
 $$
-A \cup B
+\Omega_1 = {H, T}
 $$
 
-2. $$
-A \cap B
+### Number of elementary outcomes
+
+$$
+|\Omega_1| = 2
 $$
 
-3. $$
-B \backslash A
+This means the experiment has **two possible elementary outcomes**.
+
+### Interpretation
+
+An **elementary outcome** represents the **exact result of the experiment**.
+
+For one toss, an elementary outcome is simply:
+
+* the coin lands **Heads**, or
+* the coin lands **Tails**.
+
+---
+
+# 2. Sample Space for Two Coin Tosses
+
+Now consider **two consecutive coin tosses**.
+
+Since **order matters**, the outcomes must record the result of the **first toss and the second toss**.
+
+Each toss has **2 possible outcomes**, so the total number of outcomes will be
+
+$$
+2 \times 2 = 4
 $$
 
-4. $$
-A \backslash B
+### Tree Diagram
+
+```
+START
+ │
+ ├── H
+ │     ├── H
+ │     └── T
+ │
+ └── T
+       ├── H
+       └── T
+```
+
+### Sample Space
+
+The possible sequences are:
+
+$$
+\Omega_2 =
+{(H,H), (H,T), (T,H), (T,T)}
+$$
+
+### Number of elementary outcomes
+
+$$
+|\Omega_2| = 4
+$$
+
+### Interpretation
+
+Each elementary outcome represents the **exact sequence of the two tosses**, for example:
+
+* ((H,T)) → first toss **Heads**, second toss **Tails**
+* ((T,H)) → first toss **Tails**, second toss **Heads**
+
+---
+
+# 3. Sample Space for Three Coin Tosses
+
+Now consider **three consecutive coin tosses**.
+
+Again, **order matters**, so we record the outcome of each toss.
+
+Each toss has **2 possibilities**, therefore:
+
+$$
+2 \times 2 \times 2 = 2^3 = 8
+$$
+
+possible outcomes.
+
+### Tree Diagram
+
+```
+START
+ │
+ ├── H
+ │     ├── H
+ │     │     ├── H
+ │     │     └── T
+ │     │
+ │     └── T
+ │           ├── H
+ │           └── T
+ │
+ └── T
+       ├── H
+       │     ├── H
+       │     └── T
+       │
+       └── T
+             ├── H
+             └── T
+```
+
+### Sample Space
+
+$$
+\Omega_3 =
+{
+(H,H,H), (H,H,T), (H,T,H), (H,T,T),
+(T,H,H), (T,H,T), (T,T,H), (T,T,T)
+}
+$$
+
+### Number of elementary outcomes
+
+$$
+|\Omega_3| = 8
 $$
 
 ---
 
-## Solution (Step by Step)
+# 4. Number of Elementary Outcomes
 
-1. **Union ($A \cup B$)**  
+We summarize the number of outcomes:
 
-- Take all from A: $\omega_1, \omega_3, \omega_5$  
-- Take all from B: $\omega_2, \omega_3, \omega_4$  
-- Remove duplicates  
+| Number of Tosses | Sample Space                                                                     | Number of Outcomes |
+| ---------------- | -------------------------------------------------------------------------------- | ------------------ |
+| 1                | ( \Omega_1 = {H,T} )                                                             | (2)                |
+| 2                | ( \Omega_2 = {(H,H),(H,T),(T,H),(T,T)} )                                         | (4)                |
+| 3                | ( \Omega_3 = {(H,H,H),(H,H,T),(H,T,H),(H,T,T),(T,H,H),(T,H,T),(T,T,H),(T,T,T)} ) | (8)                |
 
-  $$
-  A \cup B = \{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}
-  $$
+In general, for **(n) coin tosses**:
 
----
+$$
+|\Omega_n| = 2^n
+$$
 
-2. **Intersection ($A \cap B$)**  
-
-- Only outcomes in **both** A and B  
-
-  $$
-  A \cap B = \{\omega_3\}
-  $$
+because each toss has **two possible outcomes**.
 
 ---
 
-3. **Difference ($B \backslash A$)**  
+# 5. Meaning of an Elementary Outcome
 
-- Take B: $\omega_2, \omega_3, \omega_4$  
-- Remove outcomes also in A ($\omega_3$)  
+An **elementary outcome** represents **one specific sequence of results** in the experiment.
 
-  $$
-  B \backslash A = \{\omega_2, \omega_4\}
-  $$
+Examples:
 
----
+* In **one toss**, an outcome is simply (H) or (T).
+* In **two tosses**, an outcome is a **pair of results**, such as ((H,T)).
+* In **three tosses**, an outcome is a **triple of results**, such as ((T,H,T)).
 
-4. **Difference ($A \backslash B$)**  
+Thus, an elementary outcome describes the **complete result of the entire experiment**, including the **order in which outcomes occur**.
 
-- Take A: $\omega_1, \omega_3, \omega_5$  
-- Remove outcomes also in B ($\omega_3$)  
 
-  $$
-  A \backslash B = \{\omega_1, \omega_5\}
-  $$
 
----
-
-## Quick Reminder
-- **Union** = everything together  
-- **Intersection** = only what is common  
-- **Difference** = take one set, remove what’s shared
+If you'd like, I can also help you create **Task 2 with diagrams + probability calculations**, written in the **same GitHub-ready style** so your whole repository stays consistent.
