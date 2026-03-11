@@ -153,13 +153,13 @@ $$
 # 4. Number of Elementary Outcomes
 
 We summarize the number of outcomes:
-$$
+
 | Number of Tosses | Sample Space                                                                     | Number of Outcomes |
 | ---------------- | -------------------------------------------------------------------------------- | ------------------ |
-| 1                | ( \Omega_1 = {H,T} )                                                             | (2)                |
-| 2                | ( \Omega_2 = {(H,H),(H,T),(T,H),(T,T)} )                                         | (4)                |
-| 3                | ( \Omega_3 = {(H,H,H),(H,H,T),(H,T,H),(H,T,T),(T,H,H),(T,H,T),(T,T,H),(T,T,T)} ) | (8)                |
-$$
+| 1                | $$( \Omega_1 = {H,T} )$$                                                           | (2)                |
+| 2                | $$( \Omega_2 = {(H,H),(H,T),(T,H),(T,T)} )$$                                       | (4)                |
+| 3                | $$( \Omega_3 = {(H,H,H),(H,H,T),(H,T,H),(H,T,T),(T,H,H),(T,H,T),(T,T,H),(T,T,T)} )$$ | (8)                |
+
 
 In general, for **(n) coin tosses**:
 
