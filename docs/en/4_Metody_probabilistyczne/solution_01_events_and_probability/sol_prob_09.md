@@ -45,6 +45,21 @@ $$
 P(\omega)=\frac{1}{3^7}=\frac{1}{2187}
 $$
 
+### Example of One Outcome
+
+A single weekly weather sequence could be:
+
+This represents:
+
+- **Monday** → Sunny  
+- **Tuesday** → Cloudy  
+- **Wednesday** → Rainy  
+- **Thursday** → Sunny  
+- **Friday** → Sunny  
+- **Saturday** → Cloudy  
+- **Sunday** → Rainy  
+
+> I also have an HTML file that visually shows **all 2187 possible weekly outcomes** using colored boxes for S, C, and R — you can scroll through and see all sequences.
 ---
 
 # 2. Event $A$ — The Entire Weekend Is Sunny
