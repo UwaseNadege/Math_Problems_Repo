@@ -113,11 +113,22 @@ $$
 \frac{2}{3}
 $$
 
+“Not sunny” means Cloudy or Rainy.
+
+Since each has probability $\frac{1}{3}$:
+
+$$
+P(\text{not sunny}) = \frac{1}{3} + \frac{1}{3} = \frac{2}{3}
+$$
+
 Thus
 
 $$
 P(\text{no sunny day})=\left(\frac{2}{3}\right)^7
 $$
+
+Since days are independent, we multiply the probability for all 7 days
+
 
 Therefore
 
@@ -159,6 +170,50 @@ Number of ways to choose 2 sunny days:
 
 $$
 \binom{7}{2}=21
+$$
+
+### Combination Formula
+
+The formula for combinations is:
+
+$$
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+$$
+
+---
+
+### Example:
+
+$$
+\binom{7}{2} = \frac{7!}{2! \cdot 5!}
+$$
+
+---
+
+### Step by Step:
+
+$$
+7! = 7 \cdot 6 \cdot 5!
+$$
+
+Substitute:
+
+$$
+\frac{7 \cdot 6 \cdot 5!}{2 \cdot 1 \cdot 5!}
+$$
+
+Cancel $5!$:
+
+$$
+\frac{7 \cdot 6}{2} = 21
+$$
+
+---
+
+### Final Answer:
+
+$$
+\binom{7}{2} = 21
 $$
 
 Probability of a specific arrangement:
